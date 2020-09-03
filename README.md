@@ -1,4 +1,4 @@
-Linear regression by using both gradient descent and stochastic gradient descent. Thus, can see the differences between them.
+Linear regression by using both gradient descent and stochastic gradient descent algorithms. Thus, you can see the differences between them.
 
 Used numpy and matplotlib libraries.
 
