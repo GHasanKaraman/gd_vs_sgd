@@ -30,7 +30,6 @@ J_gd = []
 J_sgd = []
 
 #Gradient Descent
-#Stochastic Gradient Descent
 def gd(i):
     global a0
     global b0
@@ -66,6 +65,7 @@ def gd(i):
     a0 = a0 - J_a.sum() * learning_rate
     b0 = b0 - J_b.sum() * learning_rate * 500
 
+#Stochastic Gradient Descent
 def sgd(i):
     
     global a1
