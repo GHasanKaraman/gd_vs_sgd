@@ -20,10 +20,10 @@ data = pd.read_csv('./lr.csv')
 x = np.array(data.X)
 y = np.array(data.Y)
 
-a0 = 5
+a0 = 6
 b0 = 100
 
-a1 = 5
+a1 = 6
 b1 = 100
 
 J_gd = []
@@ -33,9 +33,9 @@ J_sgd = []
 def gd(i):
     global a0
     global b0
-    
+
     learning_rate = 0.000001
-      
+
     J = ((a0 * x + b0) - y)**2
     J_gd.append(J.sum())
 
@@ -44,7 +44,7 @@ def gd(i):
 
     if(len(J_gd) > 50):
         J_gd.pop(0)
-        
+
     ax3.clear()
     ax3.set_title("Loss of GD")
     ax3.plot(np.arange(i-len(J_gd)+1 ,i+1), np.array(J_gd),label = "{:.2f}".format(J.sum()))
