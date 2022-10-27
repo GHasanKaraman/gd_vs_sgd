@@ -20,10 +20,10 @@ data = pd.read_csv('./lr.csv')
 x = np.array(data.X)
 y = np.array(data.Y)
 
-a0 = 6
+a0 = 5
 b0 = 100
 
-a1 = 6
+a1 = 5
 b1 = 100
 
 J_gd = []
